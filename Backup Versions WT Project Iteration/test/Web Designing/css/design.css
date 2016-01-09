@@ -1,0 +1,167 @@
+#com{ padding:5px; margin-bottom:5px; width:500px; height:auto; background-color:#CCC; border:#000000; border-style:double; border-width:thin; font-family:Georgia, "Times New Roman", Times, serif;}
+h2{color:#000066; margin-top:10px;}
+h3{color:#660066;}
+h4{color:#660033;}
+#WT{ width:auto; height:auto; background-image:url('../images/bg.jpg'); background-repeat:repeat-x repeat-y;}
+#header{width:100%; height:160px; clear:both; background-image:url('../images/logo.jpg'); border-bottom:outset; border-bottom-width:8px;}
+#nav{width:auto; height:auto; clear:both; padding-top:0; margin-top:0;}
+#sidebar{width:auto; height:auto; clear:both;} 
+#content{width:auto; height:auto; float:left; margin-left:14%;  margin-right:14%; margin-bottom:10px; margin-top:5px;}
+#footer{position:relative; width:100%; height:220px; clear:both; text-align:justify; background-color:#0e0e0e; border-top:inset; border-top-width:6px; font-family:museo;}
+a.changecolor:link{
+	color:#666666;
+	text-decoration:none;
+}
+a.changecolor:visited{
+	color:#666666;
+	text-decoration:none;
+}
+a.changecolor:hover{
+	color:#693;
+}
+#locate{width:84%; height:200px; margin-left:8%; margin-right:8%;}
+#recipe{width:auto; min-height:330px; height:auto; border-style:solid; padding-left:5px; margin-top: 5px; margin-bottom: 5px;}
+#footerext{border-top: 30px solid #0e0e0e; border-right: 30px solid transparent;}
+#news{margin:5px; width:100%; height:250px; padding-bottom:0.5px;}
+#thumbnail{float:left;}
+#mindata{float:left; width:680px; height:250px; margin-left:5px; padding-left:10px; padding-right:5px; font-family:"Georgia", Times, serif}
+#fulldata{float:left; width:auto; height:auto; margin:5px; font-family:"Georgia", Times, serif;}
+#comment{ margin-bottom:5px; margin-right:5px; width:100%; height:auto;}
+a:link{font-size:20; color:white; text-decoration:none;}
+a:visited{font-size:20; color:white; text-decoration:none;}
+a:hover{color:white; background-color:transparent; text-decoration:underline; font-size:20;}
+#foot{color:white; font-size:21px; border-bottom:groove; margin-top:1px;}
+#rank{
+	padding-left:20px;
+}
+#rank tr td{
+	padding-right:50px;
+	text-align:left;}
+#rank th{
+	padding-right:80px;
+	padding-bottom:10px;
+	text-align:left;}
+#navig ul{
+	box-shadow: 7px 7px 20px rgba(10,10,10,10);
+	padding: 0 0px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+#navig ul li{
+	float: left;
+}
+#navig ul li:hover{
+}
+#navig ul li a{
+	display:block;
+	padding: 0 0px;
+	text-decoration: none;
+}
+#navig ul li a:hover{
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-o-transform:scale(1.1);
+}
+#menu ul{
+	padding: 0 0px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+#menu ul li{
+	float: left;
+	padding-left:10px;
+}
+#menu ul li a{
+	display:block; 
+	padding: 0 0px;
+	text-decoration: none;
+}
+#menu ul li a img{
+	opacity:0.7;
+}
+#flip{position:relative;}
+#flip img{
+position:absolute;
+top:0;
+left:0;
+/*For Chrrome & Safari*/
+-webkit-transition: margin-top;
+-webkit-transition-timing-function:ease-in;
+-webkit-transition-duration: 1000ms; 
+/*For Mozilla Firefox*/
+-moz-transition: margin-top;
+-moz-transition-timing-function:ease-in;
+-moz-transition-duration: 1000ms;
+/*For Opera*/
+-o-transition: margin-top;
+-o-transition-timing-function:ease-in;
+-o-transition-duration: 1000ms;
+/*For Internet Explorer*/
+-ms-transition: margin-top;
+-ms-transition-timing-function:ease-in;
+-ms-transition-duration: 1000ms;
+
+
+z-index:auto;
+}
+/* Automatic Flip Effect
+#flip1 img{
+-webkit-animation:mystyle;
+-webkit-animation-duration:5s;
+-webkit-animation-delay:10s;
+-webkit-animation-direction:alternate;
+-webkit-animation-iteration-count:2;
+}
+
+@-webkit-keyframes mystyle
+{
+0%	  {margin-top:0px;}
+50%   {margin-top:254px;}
+100%  {margin-top:254px;}
+}
+*/
+#flip:hover img{
+margin-top:254px;
+}
+#flip .details{
+position:absolute;
+top:0;
+left:0;
+z-index:-1;
+}
+#back
+{
+	overflow:hidden;
+	z-index:auto;
+}
+#back:hover img{
+margin-top:254px;
+}
+
+#grey {
+	-moz-transition-duration: 1s;
+    filter: url('../html/filters.svg#grayscale'); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+	/* Google Chrome & Safari */
+	-webkit-transition-duration: 1s;
+    -webkit-filter: grayscale(1); 
+	/*For Mozilla Firefox*/
+	-moz-transition-duration:1s;
+	/*For Opera*/
+	-o-transition-duration: 1s;
+    -o-filter: grayscale(1);
+	/*For Internet Explorer*/
+	-ms-transition-duration: 1s;
+    -ms-filter: grayscale(1);
+}
+#grey:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+@font-face
+{
+	font-family:museo;
+	src:url(../font/museo_300_regular.ttf);
+}

@@ -1,0 +1,134 @@
+h1{color:green;}
+h2{color:blue;}
+#WT{ width:auto; height:auto; background-image:url('bg.jpg'); background-repeat:repeat-x repeat-y;}
+#header{width:auto; height:125px; clear:both; background-color:#1a1b1f;}
+#nav{width:auto; height:auto; clear:both; font-size:23;}
+#main{width:100%; height:auto; float:left; padding:10px; z-index:-1;} 
+#footer{width:auto; height:auto; clear:both; text-align:center; background-color:#1a1b1f;}
+#page{width:28%; height:auto; position:relative; float:left; margin-top:30px; margin-left:7%;}
+#sidebar{width:27%; position:fixed; background-color:#F60;} 
+#moviecontent{width:54%; height:100%; float:left; margin-left:5px; margin-top:30px; background-color:#7092be}
+#sportcontent{width:54%; height:100%; float:left; margin-left:5px; margin-top:30px; background-color:#b5e61d}
+#gadgetcontent{width:54%; height:100%; float:left; margin-left:5px; margin-top:30px; background-color:#22b14c}
+#lifecontent{width:54%; height:100%; float:left; margin-left:5px; margin-top:30px; background-color:#a349a4}
+#videogcontent{width:54%; height:100%; float:left; margin-left:5px; margin-top:30px; background-color:#ffc90e}
+a:link{font-size:22; color:white; text-decoration:none;}
+a:visited{font-size:22; color:white; text-decoration:none;}
+a:hover{color:white; background-color:transparent; font-size:22;}
+nav ul{
+	box-shadow: 0px 0px 9px rgba(10,10,10,10);
+	padding: 0 0px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+nav ul li{
+	float: left;
+}
+nav ul li:hover{
+	
+}
+nav ul li a{
+	display:block; padding: 0 0px;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	
+}
+
+#flip{position:relative;}
+#flip img{
+position:absolute;
+top:0;
+left:0;
+-webkit-transition: margin-top;
+-webkit-transition-timing-function:ease-in;
+-webkit-transition-duration: 1000ms;
+z-index:auto;
+}
+
+#flip1 img{
+-webkit-animation:mystyle;
+-webkit-animation-duration:5s;
+-webkit-animation-delay:10s;
+-webkit-animation-direction:alternate;
+-webkit-animation-iteration-count:2;
+}
+
+@-webkit-keyframes mystyle
+{
+0%	  {margin-top:0px;}
+50%   {margin-top:250px;}
+100%  {margin-top:250px;}
+}
+
+#flip:hover img{
+margin-top:250px;
+}
+#flip .details{
+position:absolute;
+top:0;
+left:0;
+z-index:-1;
+}
+#back
+{
+	z-index:auto;
+	}
+#menu {
+  margin:0;
+  padding:0;
+  width: 50em;
+  height: 4.5em;
+  overflow:hidden;
+  }
+#menu li {
+  display:inline;
+  list-style-type:none;
+  position:absolute;
+  }
+#menu li a {
+  display:block;
+  float:left;
+  text-decoration:none;
+  margin:0;
+  }
+#menu li a img {
+  opacity:0.7;
+  margin:0.5em;
+  border:0;
+  float:left;
+  }
+#menu li a span {
+  display:none;
+  position:absolute;
+  padding-left:200px;
+  }
+#menu li a:hover {
+  background:transparent;
+  }
+#menu li a:hover span {
+  width:10em;
+  color:#006;
+  display:block;
+  cursor:pointer;
+  float:left;
+  }
+#menu .h2 {
+  margin:0 0px;
+  padding:0;
+  color:#fc0;
+  font-variant:small-caps;
+  font-size:1.25em;
+  border:0;
+  }
+  #grey {
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+	-webkit-transition-duration: 1s;
+    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+}
+#grey:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}

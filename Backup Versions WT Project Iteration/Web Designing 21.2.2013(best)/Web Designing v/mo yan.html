@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<title>E!nexus\Lifestyle</title>
+		<link href="design.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript">
+        	function addcmt()
+	        {
+    	    	txt=document.getElementById("briefdata");
+				if(txt.value=="")
+				{
+					alert("Enter your comment!!");
+					return;
+				}
+				pc=document.createElement("div");
+				var g="Guest:      "
+				txtnode=document.createTextNode(g+txt.value);
+				pc.appendChild(txtnode);
+				document.getElementById("cmt").appendChild(pc);
+        	}
+		</script>    
+	</head>
+	<body>
+		<div id="WT">
+			<div id="header">
+                    <img src="logo.jpg" usemap="#home">
+						<map name="home">
+							<area shape="rect" coords="68, 58, 300, 120" href="home.html">
+                            <area shape="rect" coords="1185, 5, 1230, 20" href="#">
+                            <area shape="rect" coords="1245, 5, 1295, 20" href="#">
+						</map>
+			</div>
+			<div id="nav">
+				<nav id="navig">
+					<center>
+					<ul>
+						<li><a href="home.html"><image src="home.png"></a></li>
+						<li><a href="movies.html"><image src="movie.png"></a></li>
+						<li><a href="sports.html"><image src="sport.png"></a></li>
+						<li><a href="gadgets.html"><image src="gadget.png"></a></li>	
+						<li><a href="life.html"><image src="life.png"></a></li>	
+						<li><a href="videog.html"><image src="video.png"></a></li>
+					</ul>
+					</center>
+				</nav>
+			</div>
+					<div id="sidebar">
+						<nav id="menu">
+            	<center>
+						<ul>					
+					        <li><a href="fashion.html"><image src="fashion.png"></a></li>
+							<li><a href="#"><image src="travel.png"></a></li>
+                            <li><a href="#"><image src="food.png"></a> </li> 
+                            <li><a href="#"><image src="music.png"></a> </li>
+                            <li><a href="#"><image src="books.png"></a> </li>
+                         </ul> 
+            	</center>
+             </nav>
+					</div>
+                    				<div id="content" style="background-color:#a349a4"> 
+                        		<div id="fulldata" style="background-color:#D594D4;">
+						<div id="thumbnail"> 
+							<a class="thumblink" href="#" rel="bookmark" title="Mo Yan awarded Literature Nobel"> 
+							<img src="8.jpg" alt="Mo Yan's bestseller Red Sorghum" title="Mo Yan's bestseller Red Sorghum" /> </a>
+							&nbsp; &nbsp;
+					</div>
+						<h2> Mo Yan awarded Literature Nobel </h2>
+						<p align="justify">Chinese writer Mo Yan was awarded 2012 Nobel Prize for literature at Stockholm Concert Hall on Monday.<br>
+
+The Nobel Prize Award Ceremony for 2012 started with the Swedish royal anthem "The King's Song." Mo Yan, dressed in black tailcoat, went slowly up to his seat on the stage with the other Nobel Prize winners, Xinhua reported. <br>
+
+Marcus Storch, chairman of the Board of Nobel Foundation first addressed the ceremony and welcomed the winners for attending the ceremony in Sweden.<br>
+
+King of Sweden Carl XVI Gustaf awarded Mo Yan the Nobel diploma, medal and a document confirming the prize amount after a representative of the Nobel Prize jury in literature introduced the achievement of Mo Yan in literature.<br>
+
+Thereafter, the orchestra presented a part of the "Aladdin Suite" called "Chinese Dance".<br>
+
+"I left my speech script at the hotel, but I've got all the words in my mind. For me, a farm boy from Gaomi's Northeast Township in far-away China, standing here in this world-famous hall after having received the Nobel Prize in Literature feels like a fairy tale, but of course it is true." <br>
+
+Mo Yan says he's very grateful for those translators for converting his works into so many languages. <br>
+
+"I'd like to pay my great respect to those academians in Swedish Academy who insist on their belief in me and I am very grateful for that. Compared with science, literature may be not having strong power,but the strongest power of literature lies in its soft power." <br>
+
+2012 Nobel Prize laureates in Physics, Chemistry, Physiology, Medicine and Economics also received their awards from the King.<br>
+
+Since 1901, the Nobel Prizes have been traditionally presented to the laureates Dec 10, the death anniversary of Alfred Nobel.</p> 
+
+<h4> Related links </h4> <br>
+
+<center><a href="life.html"> Return to Lifestyle </a></center><br><br>
+<a href="#"><img src="tweet.jpg"> &nbsp &nbsp <img src="fb.png"> &nbsp &nbsp <img src="g+.jpg"></a> <br> </p>
+<p align="left"> <b> Comments </b> <br>
+<textarea name="briefdata" id="briefdata" cols="50" rows="5"></textarea></p>
+<input type="submit" id="sbcmt" value="Submit" onClick="addcmt()"/><br>
+<div id="comment">
+	<p id="cmt" bordercolor="#a349a4" width="100%"></p>
+</div>
+					</div>
+					</div>
+			<div id="footer">
+            					<br>
+					<a href="#">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">Copyrights</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">Follow Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">Disclaimer</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+			</div>
+		</div>
+        		<div id="footerext"></div>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+﻿#imageSliderWrapper {padding:0px 20px;width:740px;height:140px;position:relative;}
+
+#imageSlider 
+{
+    width:742px; height:108px;
+    padding:0;/*Note: never change this value other than 0 */
+    background-color:#444; 
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+}
+
+/*--------div.item is each slides. It is the child div nodes of #imageSlider, and the wrapper of each slide image--------*/
+#imageSlider .item 
+{
+    border:1px solid #555; 
+	margin-top:2px;
+	margin-right:2px;
+	margin-bottom:2px;
+	margin-left:2px;
+    color:Black;
+    line-height:30px;
+}
+
+#imageSlider img 
+{
+    height:100px;
+}
+
+#imageSlider .description 
+{
+    display:none;
+}
+
+
+/*-----------navigation buttons----------------*/
+.navPrev, .navPlay, .navPause, .navNext 
+{
+    width:17px; height:17px; position:absolute; top:423px; 
+     
+    display:inline-block; z-index:5; cursor:pointer;
+}
+
+.navPrev {left:650px;
+background:transparent url('images/back.png');
+} 
+.navNext {left:690px;
+background:transparent url('images/next.png');
+}
+
+        
+/*-------------navigation bullets------------*/
+
+/* Note: When "ScrollAllInView" was set to true in the Javascript, the navBullets won't be displayed.*/
+.navBullets
+{
+    display:none;
+}
